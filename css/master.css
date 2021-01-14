@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+* .noscroll {
+  overflow: hidden;
+}
+
+header {
+  height: 48px;
+  background-color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header_logo img {
+  width: 48px;
+  height: 48px;
+}
+
+header .header_nav_container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header .header_nav_container .header_nav {
+  width: 100%;
+  height: 100%;
+  background-color: #1B1310;
+  z-index: 2;
+}
+
+header .header_nav_container .header_nav .nav_list {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header .header_nav_container .header_nav .nav_item {
+  margin-right: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+header .burger_btn {
+  margin-left: auto;
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+  border: none;
+}
+
+header .burger_btn .bar {
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+}
+
+header .burger_btn .bar_top {
+  top: 10px;
+}
+
+header .burger_btn .bar_mid {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .burger_btn .bar_bottom {
+  bottom: 10px;
+}
+
+header .close .bar_top {
+  -webkit-transform: translate(-50%, 10px) rotate(45deg);
+          transform: translate(-50%, 10px) rotate(45deg);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+header .close .bar_mid {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+header .close .bar_bottom {
+  -webkit-transform: translate(-50%, -8px) rotate(-45deg);
+          transform: translate(-50%, -8px) rotate(-45deg);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+main {
+  margin: 0 1rem 0 1rem;
+}
+
+main .team_prelusion h2 {
+  margin-top: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main .team_prelusion .team_introduction_container {
+  margin-top: 5px;
+}
+
+main .team_prelusion .team_introduction_container p {
+  text-align: justify;
+}
+
+main .team_prelusion .person_introduction_container {
+  margin-top: 2rem;
+}
+
+main .team_prelusion .person_introduction_container .img_container .img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .team_prelusion .person_introduction_container .img_container .img img {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+main .team_prelusion .person_introduction_container .img_container p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+main .team_prelusion .person_introduction_container p {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+main .voice_of_parents_container {
+  margin-top: 4rem;
+}
+
+main .voice_of_parents_container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .voice_of_parents_container .parent_name {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+main .voice_of_parents_container .parent_comment {
+  text-align: justify;
+}
+
+main .notice_container {
+  margin: 4rem auto;
+}
+
+main .notice_container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .notice_container p {
+  text-align: justify;
+}
+
+main .cntact_container {
+  margin: 4rem auto;
+  text-align: center;
+  display: block;
+}
+
+main .cntact_container h2 {
+  font-size: 30px;
+}
+
+main .cntact_container .contact_link ul {
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+main .cntact_container .contact_link ul li {
+  text-align: left;
+}
+
+main .cntact_container .contact_link ul a {
+  font-size: 23px;
+}

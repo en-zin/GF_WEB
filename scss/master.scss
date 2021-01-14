@@ -1,0 +1,128 @@
+@import 'reset';
+@import 'common';
+
+main {
+    // チーム紹介css
+    margin: 0 1rem 0 1rem;
+
+    .team_prelusion {
+
+        h2 {
+            margin-top: 5px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .team_introduction_container{
+            margin-top: 5px;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .person_introduction_container {
+
+            margin-top: 2rem;
+
+            .img_container {
+
+                .img {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+                }
+
+                p {
+                    margin-top: 5px;
+                    text-align: center;
+                }
+            }
+
+            p {
+                margin-top: 5px;
+                text-align: justify;
+            }
+
+        }
+    }
+    // チーム紹介終わり
+
+    // 保護者の声
+    .voice_of_parents_container {
+
+        margin-top: 4rem;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .parent_name {
+            text-align: center;
+            margin: 1rem 0 1rem 0;
+        }
+
+        .parent_comment {
+            text-align: justify;
+        }
+    }
+
+    // 保護者の声終わり
+
+    // お知らせ
+    .notice_container {
+
+        margin: 4rem auto;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+    }
+    // お知らせ終わり
+
+    .cntact_container {
+
+        margin: 4rem auto;
+        text-align: center;
+        display: block;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .contact_link {
+
+            ul {
+                padding-left: 0;
+                list-style: none;
+                display: inline-block;
+
+                li {
+                    text-align: left;
+                }
+
+                a {
+                    font-size: 23px;
+                }
+
+            }
+
+
+
+        }
+
+    }
+}
