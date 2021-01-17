@@ -1,13 +1,17 @@
+@import "variables";
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 15px;
-    line-height: 1.5em;
-    letter-spacing: 0.05em;
-
     .noscroll {
         overflow: hidden;
     }
-    
+
+    @include sp {
+        font-size: 15px;
+        line-height: 1.6em;
+        letter-spacing: 0.05em;
+        // background-color: #eff0f3;
+    }
+
 }

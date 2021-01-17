@@ -1,21 +1,22 @@
 @import "variables";
 
-header {
+.header {
+
     height: 48px;
     background-color: black;
     display: flex;
 
 
-    .header_logo {
+    &_logo {
 
-        img {
+        &_img {
             width: 48px;
             height: 48px;
         }
 
     }
 
-    .header_nav_container{
+    &_nav{
         display: none;
         width: 100vw;
         height: 100vh;
@@ -24,31 +25,37 @@ header {
         left: 0;
         z-index: 2;
 
-        .header_nav{
+        &_container{
             width: 100%;
             height: 100%;
             background-color:#1B1310;
             z-index: 2;
-
-            .nav_list {
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
-            }
-
-            .nav_item {
-                margin-right: 0;
-                margin-bottom: 40px;
-                color: #fff;
-            }
         }
+
+        &_list {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        &_item {
+            margin-right: 0;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
     }
 
 
-    .burger_btn{
+    &_burger_btn{
         margin-left: auto;
         display: block;
         width: 39px;
@@ -57,7 +64,7 @@ header {
         z-index: 3;
         border:none;
 
-        .bar{
+        &_bar{
             width: 20px;
             height: 1px;
             display: block;
@@ -67,16 +74,16 @@ header {
             background-color: #fff;
         }
 
-        .bar_top{
+        & .bar_top{
             top: 10px;
         }
 
-        .bar_mid{
+        & .bar_mid{
             top: 50%;
             transform: translate(-50%,-50%);
         }
 
-        .bar_bottom{
+        & .bar_bottom{
             bottom: 10px;
         }
 
