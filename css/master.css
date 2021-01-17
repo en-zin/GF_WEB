@@ -3,16 +3,21 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 15px;
-  line-height: 1.5em;
-  letter-spacing: 0.05em;
 }
 
 * .noscroll {
   overflow: hidden;
 }
 
-header {
+@media (max-width: 575px) {
+  * {
+    font-size: 15px;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+  }
+}
+
+.header {
   height: 48px;
   background-color: black;
   display: -webkit-box;
@@ -21,12 +26,12 @@ header {
   display: flex;
 }
 
-header .header_logo img {
+.header_logo_img {
   width: 48px;
   height: 48px;
 }
 
-header .header_nav_container {
+.header_nav {
   display: none;
   width: 100vw;
   height: 100vh;
@@ -36,14 +41,14 @@ header .header_nav_container {
   z-index: 2;
 }
 
-header .header_nav_container .header_nav {
+.header_nav_container {
   width: 100%;
   height: 100%;
   background-color: #1B1310;
   z-index: 2;
 }
 
-header .header_nav_container .header_nav .nav_list {
+.header_nav_list {
   display: block;
   position: absolute;
   top: 50%;
@@ -53,13 +58,18 @@ header .header_nav_container .header_nav .nav_list {
   text-align: center;
 }
 
-header .header_nav_container .header_nav .nav_item {
+.header_nav_item {
   margin-right: 0;
   margin-bottom: 40px;
   color: #fff;
 }
 
-header .burger_btn {
+.header_nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_burger_btn {
   margin-left: auto;
   display: block;
   width: 39px;
@@ -69,7 +79,7 @@ header .burger_btn {
   border: none;
 }
 
-header .burger_btn .bar {
+.header_burger_btn_bar {
   width: 20px;
   height: 1px;
   display: block;
@@ -80,21 +90,21 @@ header .burger_btn .bar {
   background-color: #fff;
 }
 
-header .burger_btn .bar_top {
+.header_burger_btn .bar_top {
   top: 10px;
 }
 
-header .burger_btn .bar_mid {
+.header_burger_btn .bar_mid {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-header .burger_btn .bar_bottom {
+.header_burger_btn .bar_bottom {
   bottom: 10px;
 }
 
-header .close .bar_top {
+.header .close .bar_top {
   -webkit-transform: translate(-50%, 10px) rotate(45deg);
           transform: translate(-50%, 10px) rotate(45deg);
   -webkit-transition: -webkit-transform .3s;
@@ -103,13 +113,13 @@ header .close .bar_top {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-header .close .bar_mid {
+.header .close .bar_mid {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
 
-header .close .bar_bottom {
+.header .close .bar_bottom {
   -webkit-transform: translate(-50%, -8px) rotate(-45deg);
           transform: translate(-50%, -8px) rotate(-45deg);
   -webkit-transition: -webkit-transform .3s;
@@ -118,107 +128,109 @@ header .close .bar_bottom {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-main {
-  margin: 0 1rem 0 1rem;
+.main {
+  margin: 0 16px 0 16px;
 }
 
-main .team_prelusion h2 {
-  margin-top: 5px;
+.main_team_prelusion_title {
+  margin-top: 8px;
   font-size: 2rem;
   text-align: center;
 }
 
-main .team_prelusion .team_introduction_container {
-  margin-top: 5px;
+.main_team_prelusion_introduction {
+  margin-top: 8px;
 }
 
-main .team_prelusion .team_introduction_container p {
+.main_team_prelusion_introduction .explanation {
   text-align: justify;
 }
 
-main .team_prelusion .person_introduction_container {
-  margin-top: 2rem;
+.main_team_prelusion_coach {
+  margin: 32px auto;
 }
 
-main .team_prelusion .person_introduction_container .img_container .img {
+.main_team_prelusion_coach .coach_img_container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-main .team_prelusion .person_introduction_container .img_container .img img {
-  width: 200px;
-  height: 200px;
+.main_team_prelusion_coach .coach_img {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
   background-color: black;
   border-radius: 50%;
 }
 
-main .team_prelusion .person_introduction_container .img_container p {
-  margin-top: 5px;
+.main_team_prelusion_coach .coach_name {
+  margin-top: 16px;
   text-align: center;
 }
 
-main .team_prelusion .person_introduction_container p {
-  margin-top: 5px;
+.main_team_prelusion_coach .coach_speech {
+  margin-top: 8px;
   text-align: justify;
 }
 
-main .voice_of_parents_container {
-  margin-top: 4rem;
+.main_parents {
+  margin-top: 32px;
 }
 
-main .voice_of_parents_container h2 {
+.main_parents .title {
   text-align: center;
   font-size: 2rem;
 }
 
-main .voice_of_parents_container .parent_name {
+.main_parents .parent_name {
   text-align: center;
-  margin: 1rem 0 1rem 0;
+  margin: 16px 0 16px 0;
 }
 
-main .voice_of_parents_container .parent_comment {
+.main_parents .parent_comment {
   text-align: justify;
 }
 
-main .notice_container {
-  margin: 4rem auto;
+.main_notice {
+  margin: 32px auto;
 }
 
-main .notice_container h2 {
+.main_notice .title {
   text-align: center;
   font-size: 2rem;
 }
 
-main .notice_container p {
-  text-align: justify;
-}
-
-main .cntact_container {
-  margin: 4rem auto;
+.main_cntact {
+  margin: 32px auto;
   text-align: center;
   display: block;
 }
 
-main .cntact_container h2 {
+.main_cntact .title {
   font-size: 30px;
 }
 
-main .cntact_container .contact_link ul {
+.main_cntact .contact_items {
   padding-left: 0;
   list-style: none;
   display: inline-block;
 }
 
-main .cntact_container .contact_link ul li {
+.main_cntact .contact_item {
   text-align: left;
 }
 
-main .cntact_container .contact_link ul a {
+.main_cntact .contact_link {
   font-size: 23px;
 }

@@ -1,72 +1,72 @@
 @import 'reset';
 @import 'common';
 
-main {
+.main {
     // チーム紹介css
-    margin: 0 1rem 0 1rem;
+    margin: 0 16px 0 16px;
 
-    .team_prelusion {
+    &_team_prelusion {
 
-        h2 {
-            margin-top: 5px;
+        &_title {
+            margin-top: 8px;
             font-size: 2rem;
             text-align: center;
         }
 
-        .team_introduction_container{
-            margin-top: 5px;
+        &_introduction{
+            margin-top: 8px;
 
-            p {
+            .explanation {
                 text-align: justify;
             }
         }
 
-        .person_introduction_container {
+        &_coach {
 
-            margin-top: 2rem;
+            margin: 32px auto;
 
-            .img_container {
-
-                .img {
-                    display: flex;
-                    justify-content: center;
-
-                    img {
-                        width: 200px;
-                        height: 200px;
-                        background-color: black;
-                        border-radius: 50%;
-                    }
-                }
-
-                p {
-                    margin-top: 5px;
-                    text-align: center;
-                }
+            .coach_img_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
-            p {
-                margin-top: 5px;
+            .coach_img {
+                width: 240px;
+                height: 240px;
+                margin: 0 auto;
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            .coach_name {
+                margin-top: 16px;
+                text-align: center;
+            }
+
+            .coach_speech {
+                margin-top: 8px;
                 text-align: justify;
             }
 
         }
+
     }
     // チーム紹介終わり
 
     // 保護者の声
-    .voice_of_parents_container {
+    &_parents {
 
-        margin-top: 4rem;
+        margin-top: 32px;
 
-        h2 {
+        .title {
             text-align: center;
             font-size: 2rem;
         }
 
         .parent_name {
             text-align: center;
-            margin: 1rem 0 1rem 0;
+            margin: 16px 0 16px 0;
         }
 
         .parent_comment {
@@ -77,52 +77,45 @@ main {
     // 保護者の声終わり
 
     // お知らせ
-    .notice_container {
+    &_notice {
 
-        margin: 4rem auto;
+        margin: 32px auto;
 
-        h2 {
+        .title {
             text-align: center;
             font-size: 2rem;
-        }
-
-        p {
-            text-align: justify;
         }
 
     }
     // お知らせ終わり
 
-    .cntact_container {
+    &_cntact {
 
-        margin: 4rem auto;
+        margin: 32px auto;
         text-align: center;
         display: block;
 
-        h2 {
+        .title {
             font-size: 30px;
         }
 
-        .contact_link {
-
-            ul {
-                padding-left: 0;
-                list-style: none;
-                display: inline-block;
-
-                li {
-                    text-align: left;
-                }
-
-                a {
-                    font-size: 23px;
-                }
-
-            }
 
 
-
+        .contact_items {
+            padding-left: 0;
+            list-style: none;
+            display: inline-block;
         }
 
-    }
+        .contact_item {
+            text-align: left;
+        }
+
+        .contact_link {
+            font-size: 23px;
+        }
+
+
+     }
+
 }

@@ -4,122 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css\slick-theme.css">
-    <link rel="stylesheet" href="css\slick.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
 
         <div class="header_logo">
-            <img src="img\GF_logo.jpg" alt="蒲生ファイターズのロゴ画像">
+            <img src="img\GF_logo.jpg" alt="蒲生ファイターズのロゴ画像" class="header_logo_img">
         </div>
 
-        <div class="header_nav_container"><!-- ②ナビゲーションメニュー -->
-            <nav class="header_nav">
-                <ul class="nav_list">
-                    <li class="nav_item">チーム紹介</a></li>
-                    <li class="nav_item">保護者の声</a></li>
-                    <li class="nav_item">お知らせ</a></li>
-                    <li class="nav_item">お問い合わせ</a></li>
+        <div class="header_nav"><!-- ②ナビゲーションメニュー -->
+            <nav class="header_nav_container">
+                <ul class="header_nav_list">
+                    <li class="header_nav_item"><a href="#1">チーム紹介</a></li>
+                    <li class="header_nav_item"><a href="#2">保護者の声</a></li>
+                    <li class="header_nav_item"><a href="#3">お知らせ</a></li>
+                    <li class="header_nav_item"><a href="#4">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="burger_btn"><!-- ③ハンバーガーボタン -->
-            <span class="bars">
-                <span class="bar bar_top"></span>
-                <span class="bar bar_mid"></span>
-                <span class="bar bar_bottom"></span>
+        <div class="header_burger_btn"><!-- ③ハンバーガーボタン -->
+            <span class="header_burger_btn_bars">
+                <span class="header_burger_btn_bar bar_top"></span>
+                <span class="header_burger_btn_bar bar_mid"></span>
+                <span class="header_burger_btn_bar bar_bottom"></span>
             </span>
         </div>
     </header>
+    <!-- main -->
     <main>
-        <div class="main_container">
+        <div class="main">
                 <!-- チーム紹介 -->
-                <section class="team_prelusion">
+                <section class="main_team_prelusion" id="1">
 
-                    <h2>チーム紹介</h2>
+                    <h2 class="main_team_prelusion_title">チーム紹介</h2>
 
-                    <div class="team_introduction_container">
+                    <div class="main_team_prelusion_introduction">
                         <article>
-                            <p>
+                            <p class="explanation">
                                 蒲生ファイターズは滋賀県東近江市桜川町の
                                 蒲生東小学校の体育館で毎週 火曜 木曜 日曜
                                 に練習を行っています。
-                            </p>
-                            <p>
-                                現在チームの人数は
-                                17人で2年生～6年生の子供たちがいます。
-                            </p>
-                            <p>
-                                見学や体験の受付は何時でも行っているので
-                                お問い合わせの Twitter Instagram gmail
-                                の内どれかを選んで連絡してください。
+                                高学年～低学年まで色々な学年の子たちがドッジボールをしています。
+                                2年生まではジュニアといって大会で3年生～6年生が出場する(オフィシャル)には出られないですが
+                                ジュニアも出場できる試合がたくさんあります。
+                                ドッジボールが好きな人たちの集まりの場所です。
+                                興味があれば見学や体験はいつでも行うことができます。
+                                見学、体験の受付はお問い合わせにある mail Twitter Instagram Line
+                                のどれかから選んでお問い合わせください。
                             </p>
                         </article>
                     </div>
 
 
                     <article>
-                        <div class="person_introduction_container">
-                            <div class="img_container">
-                                <div class="img">
-                                    <img src="" alt="">
-                                </div>
-                                <p>監督 : 竹岡雄司</p>
+                        <div class="main_team_prelusion_coach">
+                            <div class="coach_img_container">
+                                <img src="" alt="" class="coach_img">
+                                <p class="coach_name">コーチ : 吉岡拓実</p>
                             </div>
                             <article>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, eos voluptatum! Architecto, vel beatae impedit sint, culpa tempora natus quisquam modi assumenda, aut consequatur officia. Explicabo impedit repellat vel cumque!
+                                <p class="coach_speech">
+                                    小学生の時には蒲生ファイターズで実際にプレーしていました。
+                                    ドッジボールが好きで色んな縁があり指導者として蒲生ファイターズに戻ってきました。
+                                    自分は主に低学年の子をメインに教えていてドッジをするうえで必要な基礎を学んでもらっています。自分が教えた選手が自分と同じようにドッチボールを好きになって人に教えられるような選手になってほしいと思いながら指導をしています。
                                 </p>
                             </article>
                         </div>
                     </article>
 
                     <article>
-                        <div class="person_introduction_container">
-                            <div class="img_container">
-                                <div class="img">
-                                    <img src="" alt="">
-                                </div>
-                                <p> コーチ : 辻ちあき</p>
+                        <div class="main_team_prelusion_coach">
+                            <div class="coach_img_container">
+                                <img src="" alt="" class="coach_img">
+                                <p class="coach_name">コーチ : 吉岡拓実</p>
                             </div>
                             <article>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit adipisci perferendis eligendi architecto saepe corporis cum alias ut error aliquam maiores consequuntur, iure, quisquam iusto. Corrupti molestiae quia quos beatae!
+                                <p class="coach_speech">
+                                    小学生の時には蒲生ファイターズで実際にプレーしていました。
+                                    ドッジボールが好きで色んな縁があり指導者として蒲生ファイターズに戻ってきました。
+                                    自分は主に低学年の子をメインに教えていてドッジをするうえで必要な基礎を学んでもらっています。自分が教えた選手が自分と同じようにドッチボールを好きになって人に教えられるような選手になってほしいと思いながら指導をしています。
                                 </p>
                             </article>
                         </div>
                     </article>
 
                     <article>
-                        <div class="person_introduction_container">
-                            <div class="img_container">
-                                <div class="img">
-                                    <img src="" alt="">
-                                </div>
-                                <p>コーチ : 塩路将之</p>
+                        <div class="main_team_prelusion_coach">
+                            <div class="coach_img_container">
+                                <img src="" alt="" class="coach_img">
+                                <p class="coach_name">コーチ : 吉岡拓実</p>
                             </div>
                             <article>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit adipisci perferendis eligendi architecto saepe corporis cum alias ut error aliquam maiores consequuntur, iure, quisquam iusto. Corrupti molestiae quia quos beatae!
+                                <p class="coach_speech">
+                                    小学生の時には蒲生ファイターズで実際にプレーしていました。
+                                    ドッジボールが好きで色んな縁があり指導者として蒲生ファイターズに戻ってきました。
+                                    自分は主に低学年の子をメインに教えていてドッジをするうえで必要な基礎を学んでもらっています。自分が教えた選手が自分と同じようにドッチボールを好きになって人に教えられるような選手になってほしいと思いながら指導をしています。
                                 </p>
                             </article>
                         </div>
                     </article>
 
                     <article>
-                        <div class="person_introduction_container">
-                            <div class="img_container">
-                                <div class="img">
-                                    <img src="" alt="">
-                                </div>
-                                <p>コーチ : 吉岡拓実</p>
+                        <div class="main_team_prelusion_coach">
+                            <div class="coach_img_container">
+                                <img src="" alt="" class="coach_img">
+                                <p class="coach_name">コーチ : 吉岡拓実</p>
                             </div>
                             <article>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit adipisci perferendis eligendi architecto saepe corporis cum alias ut error aliquam maiores consequuntur, iure, quisquam iusto. Corrupti molestiae quia quos beatae!
+                                <p class="coach_speech">
+                                    小学生の時には蒲生ファイターズで実際にプレーしていました。
+                                    ドッジボールが好きで色んな縁があり指導者として蒲生ファイターズに戻ってきました。
+                                    自分は主に低学年の子をメインに教えていてドッジをするうえで必要な基礎を学んでもらっています。自分が教えた選手が自分と同じようにドッチボールを好きになって人に教えられるような選手になってほしいと思いながら指導をしています。
                                 </p>
                             </article>
                         </div>
@@ -130,8 +127,8 @@
 
             <!-- 保護者の声 -->
             <section>
-                <div class="voice_of_parents_container">
-                    <h2>保護者の声</h2>
+                <div class="main_parents" id="2">
+                    <h2 class="title">保護者の声</h2>
                     <article>
                         <p class="parent_name">保護者役員 : はやしかよこさん</p>
                         <p class="parent_comment">
@@ -159,13 +156,10 @@
 
             <!--お知らせ -->
             <section>
-                <div class="notice_container">
-                    <h2>お知らせ</h2>
+                <div class="main_notice" id="3">
+                    <h2 class="title">お知らせ</h2>
                 <article>
-                    <p>
-                        1月24日(木)<br>
-                        ブルースピリッツさんと東小学校体育館で練習試合があります
-                    </p>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=46os3k07q8npo0co22t41u044s%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="100%" height="560" frameborder="0" scrolling="no"></iframe>
                 </article>
                 </div>
 
@@ -175,23 +169,19 @@
             <!-- お問い合わせ -->
             <section>
 
-                <div class="cntact_container">
-                    <h2>お問い合わせ</h2>
-                        <div class="contact_link">
-                            <ul>
-                                <li><a href="">メール : test@gmail.com</a></li>
-                                <li><a href="">Twitter : @GF_2021</a></li>
-                                <li><a href="">Instagram : @GF_2021</a></li>
-                                <li><a href="">Line : 123456789</a></li>
-                            </ul>
-                        </div>
+                <div class="main_cntact" id="4">
+                    <h2 class="title">お問い合わせ</h2>
+                        <ul class="contact_items">
+                            <li class="contact_item"><a href="mailto:info&#64;example.com" class="contact_link">info&#64;example.com</a></li>
+                            <li class="contact_item"><a href="" class="contact_link">Twitter : @GF_2021</a></li>
+                            <li class="contact_item"><a href="" class="contact_link">Instagram : @GF_2021</a></li>
+                            <li class="contact_item"><a href="" class="contact_link">Line : 123456789</a></li>
+                        </ul>
                 </div>
             </section>
         </div>
     </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js\slick.min.js"></script>
-<script src="js\jquery.bgswitcher.js"></script>
 <script src="js\script.js"></script>
 </html>
