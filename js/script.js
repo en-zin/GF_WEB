@@ -1,12 +1,20 @@
 $(".header_burger_btn").on("click", function () {
 	$(".header_burger_btn").toggleClass("close");
 	$(".header_nav").fadeToggle(500);
-	// $("body").toggleClass("noscroll");
+	$("body").toggleClass("noscroll");
+});
+
+$(".header_nav_item").on("click", function () {
+	$(".header_burger_btn").toggleClass("close");
+	$(".header_nav").fadeToggle(500);
+	$("body").toggleClass("noscroll");
 });
 
 $(function(){
   // #で始まるアンカーをクリックした場合に処理
-  $('a[href^=#]').click(function(){
+	$('a[href^=#]').click(function () {
+	$(".header_burger_btn").toggleClass("close");
+	$(".header_nav").fadeToggle(500);
     // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
     var adjust = 0;
     // スクロールの速度
@@ -21,4 +29,5 @@ $(function(){
     $('body,html').animate({scrollTop:position}, speed, 'swing');
 	  return false;
   });
+
 });
