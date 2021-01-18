@@ -1,3 +1,15 @@
+$(function () {
+	$(".slide").slick({
+		accessibility: true,
+		autoplay: true,
+		autoplaySpeed: 1500,
+		fade: true,
+		zIndex: 0,
+		default: false,
+	});
+});
+
+
 $(".header_burger_btn").on("click", function () {
 	$(".header_burger_btn").toggleClass("close");
 	$(".header_nav").fadeToggle(500);
