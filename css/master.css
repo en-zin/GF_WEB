@@ -18,12 +18,16 @@
 }
 
 .header {
+  width: 100%;
   height: 48px;
   background-color: black;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .header_logo_img {
@@ -75,6 +79,7 @@
   width: 39px;
   height: 39px;
   position: relative;
+  left: -28px;
   z-index: 3;
   border: none;
 }
@@ -126,6 +131,11 @@
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
+}
+
+.slide img {
+  z-index: 0;
+  height: calc(100vh - 48px);
 }
 
 .main {
