@@ -63,9 +63,6 @@
         width: 39px;
         height: 39px;
         position: relative;
-        // バグ
-        left: -28px;
-        // バグ
         z-index: 3;
         border:none;
 
@@ -112,8 +109,11 @@
 }
 
 .slide {
+
     img {
-        z-index: 0;
+
         height: calc(100vh - 48px);
+
     }
+
 }
