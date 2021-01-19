@@ -1,6 +1,7 @@
 $(function () {
 	$(".slide").slick({
-		accessibility: true,
+		accessibility: false,
+		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 1500,
 		fade: true,
