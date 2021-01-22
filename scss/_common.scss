@@ -110,9 +110,20 @@
 
 .slide {
 
+        @include tab {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+
     img {
 
         height: calc(100vh - 48px);
+        width: 100vw;
+
+        @include tab {
+            height: calc(80vh - 48px);
+        }
 
     }
 
