@@ -1,20 +1,17 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
 }
 
 * .noscroll {
   overflow: hidden;
-}
-
-@media (max-width: 575px) {
-  * {
-    font-size: 15px;
-    line-height: 1.6em;
-    letter-spacing: 0.05em;
-  }
 }
 
 .header {
@@ -132,33 +129,81 @@
   transition: transform .3s, -webkit-transform .3s;
 }
 
+@media (min-width: 768px) {
+  .slide {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
 .slide img {
   height: calc(100vh - 48px);
+  width: 100vw;
 }
 
-.main {
-  margin: 0 16px 0 16px;
+@media (min-width: 768px) {
+  .slide img {
+    height: calc(80vh - 48px);
+  }
 }
 
-.main_team_prelusion_title {
+main {
+  background-color: #f8f5f2;
+}
+
+main .main {
+  margin: 0 24px 0 24px;
+}
+
+@media (min-width: 768px) {
+  main .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+main .main_team_prelusion_title {
   margin-top: 8px;
   font-size: 2rem;
   text-align: center;
 }
 
-.main_team_prelusion_introduction {
+main .main_team_prelusion_introduction {
   margin-top: 8px;
 }
 
-.main_team_prelusion_introduction .explanation {
+main .main_team_prelusion_introduction .explanation {
   text-align: justify;
 }
 
-.main_team_prelusion_coach {
+@media (min-width: 768px) {
+  main .main_team_prelusion_coach {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+main .main_team_prelusion_coach_introduction {
   margin: 32px auto;
 }
 
-.main_team_prelusion_coach .coach_img_container {
+@media (min-width: 768px) {
+  main .main_team_prelusion_coach_introduction {
+    width: 320px;
+    margin-top: 40px;
+  }
+}
+
+main .main_team_prelusion_coach_introduction .coach_img_container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,71 +219,157 @@
           justify-content: center;
 }
 
-.main_team_prelusion_coach .coach_img {
+main .main_team_prelusion_coach_introduction .coach_img {
   width: 240px;
   height: 240px;
   margin: 0 auto;
-  background-color: black;
-  border-radius: 50%;
 }
 
-.main_team_prelusion_coach .coach_name {
+@media (min-width: 768px) {
+  main .main_team_prelusion_coach_introduction .coach_img {
+    width: 100%;
+  }
+}
+
+main .main_team_prelusion_coach_introduction .coach_name {
   margin-top: 16px;
   text-align: center;
 }
 
-.main_team_prelusion_coach .coach_speech {
+main .main_team_prelusion_coach_introduction .coach_speech {
   margin-top: 8px;
   text-align: justify;
 }
 
-.main_parents {
+main .main_parents {
   margin-top: 32px;
 }
 
-.main_parents .title {
+main .main_parents .title {
   text-align: center;
   font-size: 2rem;
 }
 
-.main_parents .parent_name {
+main .main_parents .parent_name {
   text-align: center;
   margin: 16px 0 16px 0;
 }
 
-.main_parents .parent_comment {
+@media (min-width: 768px) {
+  main .main_parents .parent_name {
+    margin: 48px 0 16px 0;
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_name_green {
+    border-bottom: solid 2px #87c10e;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_name_mm {
+    border-bottom: solid 2px #fbdd95;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_name_blue {
+    border-bottom: solid 2px #3fbcd0;
+  }
+}
+
+main .main_parents .parent_comment {
   text-align: justify;
 }
 
-.main_notice {
+@media (min-width: 768px) {
+  main .main_parents .parent_comment {
+    padding-left: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_comment_green {
+    background-color: #f9f7e9;
+    /*背景色*/
+    border-left: solid 10px #87c10e;
+    /*左ライン*/
+    color: #000000;
+    /*文字色*/
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_comment_mm {
+    background-color: #fffef3;
+    /*背景色*/
+    border-left: solid 10px #fbdd95;
+    /*左ライン*/
+    color: #000000;
+    /*文字色*/
+  }
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_comment_blue {
+    background-color: #f6faee;
+    /*背景色*/
+    border-left: solid 10px #3fbcd0;
+    /*左ライン*/
+    color: #000000;
+    /*文字色*/
+  }
+}
+
+main .main_notice {
   margin: 32px auto;
 }
 
-.main_notice .title {
+main .main_notice .title {
   text-align: center;
   font-size: 2rem;
 }
 
-.main_cntact {
+main .main_notice .calendar {
+  width: 100%;
+  height: 560px;
+}
+
+@media (min-width: 768px) {
+  main .main_notice .calendar {
+    height: 700px;
+  }
+}
+
+main .main_cntact {
   margin: 32px auto;
   text-align: center;
   display: block;
 }
 
-.main_cntact .title {
+main .main_cntact .title {
   font-size: 30px;
 }
 
-.main_cntact .contact_items {
+main .main_cntact .contact_items {
   padding-left: 0;
   list-style: none;
   display: inline-block;
 }
 
-.main_cntact .contact_item {
+main .main_cntact .contact_item {
   text-align: left;
 }
 
-.main_cntact .contact_link {
+main .main_cntact .contact_item:nth-child(n + 1) {
+  margin-top: 8px;
+}
+
+main .main_cntact .contact_link {
+  text-decoration: none;
   font-size: 23px;
+  color: #000;
 }
