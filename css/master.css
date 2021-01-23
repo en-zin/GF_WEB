@@ -14,6 +14,10 @@
   overflow: hidden;
 }
 
+body {
+  background-color: #e4e4de;
+}
+
 .header {
   width: 100%;
   height: 48px;
@@ -40,6 +44,12 @@
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .header_nav {
+    display: none;
+  }
 }
 
 .header_nav_container {
@@ -78,6 +88,12 @@
   position: relative;
   z-index: 3;
   border: none;
+}
+
+@media (min-width: 1024px) {
+  .header_burger_btn {
+    display: none;
+  }
 }
 
 .header_burger_btn_bar {
@@ -129,6 +145,41 @@
   transition: transform .3s, -webkit-transform .3s;
 }
 
+.header_pc_nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header_pc_nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.header_pc_nav_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_pc_nav_item {
+  margin-right: 16px;
+  list-style: none;
+}
+
+.header_pc_nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .slide {
     margin: 0 auto;
@@ -136,40 +187,59 @@
   }
 }
 
-.slide img {
+@media (min-width: 1024px) {
+  .slide {
+    width: 90%;
+  }
+}
+
+.slide .sp_tab_img {
   height: calc(100vh - 48px);
   width: 100vw;
 }
 
 @media (min-width: 768px) {
-  .slide img {
+  .slide .sp_tab_img {
     height: calc(80vh - 48px);
   }
 }
 
-main {
-  background-color: #f8f5f2;
+@media (min-width: 1024px) {
+  .slide .sp_tab_img {
+    display: none;
+  }
 }
 
 main .main {
-  margin: 0 24px 0 24px;
+  margin: 16px 8px 0 8px;
+  padding: 8px 8px 0 8px;
+  background-color: #f6faee;
+  border-radius: 9px;
 }
 
 @media (min-width: 768px) {
   main .main {
     width: 90%;
-    margin: 0 auto;
+    margin: 16px auto;
+    padding: 16px 16px 0 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main {
+    width: 80%;
   }
 }
 
 main .main_team_prelusion_title {
-  margin-top: 8px;
+  padding-top: 8px;
   font-size: 2rem;
   text-align: center;
 }
 
 main .main_team_prelusion_introduction {
-  margin-top: 8px;
+  width: 90%;
+  margin: 8px auto 0 auto;
 }
 
 main .main_team_prelusion_introduction .explanation {
@@ -192,7 +262,15 @@ main .main_team_prelusion_introduction .explanation {
   }
 }
 
+@media (min-width: 1024px) {
+  main .main_team_prelusion_coach {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 main .main_team_prelusion_coach_introduction {
+  width: 90%;
   margin: 32px auto;
 }
 
@@ -220,8 +298,8 @@ main .main_team_prelusion_coach_introduction .coach_img_container {
 }
 
 main .main_team_prelusion_coach_introduction .coach_img {
-  width: 240px;
-  height: 240px;
+  width: 100%;
+  height: 320px;
   margin: 0 auto;
 }
 
@@ -232,8 +310,11 @@ main .main_team_prelusion_coach_introduction .coach_img {
 }
 
 main .main_team_prelusion_coach_introduction .coach_name {
-  margin-top: 16px;
+  margin-top: 24px;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: system-ui;
 }
 
 main .main_team_prelusion_coach_introduction .coach_speech {
@@ -252,12 +333,12 @@ main .main_parents .title {
 
 main .main_parents .parent_name {
   text-align: center;
-  margin: 16px 0 16px 0;
+  margin: 24px 0 16px 0;
 }
 
 @media (min-width: 768px) {
   main .main_parents .parent_name {
-    margin: 48px 0 16px 0;
+    margin: 48px 0 32px 0;
     text-align: left;
     display: inline-block;
   }
@@ -282,6 +363,8 @@ main .main_parents .parent_name {
 }
 
 main .main_parents .parent_comment {
+  width: 90%;
+  margin: 0 auto;
   text-align: justify;
 }
 
@@ -345,7 +428,7 @@ main .main_notice .calendar {
 }
 
 main .main_cntact {
-  margin: 32px auto;
+  margin: 32px 0 0 0 auto;
   text-align: center;
   display: block;
 }
@@ -370,6 +453,6 @@ main .main_cntact .contact_item:nth-child(n + 1) {
 
 main .main_cntact .contact_link {
   text-decoration: none;
-  font-size: 23px;
+  font-size: 16px;
   color: #000;
 }
