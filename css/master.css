@@ -211,7 +211,7 @@ body {
 }
 
 main .main {
-  margin: 16px 8px 0 8px;
+  margin: 16px 16px 0 16px;
   padding: 8px 8px 0 8px;
   background-color: #ffffff;
   border-radius: 9px;
@@ -244,6 +244,10 @@ main .main_team_prelusion_introduction {
 
 main .main_team_prelusion_introduction .explanation {
   text-align: justify;
+}
+
+main .main_team_prelusion_introduction .explanation:nth-child(n + 1) {
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
@@ -322,8 +326,64 @@ main .main_team_prelusion_coach_introduction .coach_speech {
   text-align: justify;
 }
 
+main .main_team_prelusion_coach_introduction .coach_speech:nth-child(n+1) {
+  margin-top: 8px;
+}
+
 main .main_parents {
-  margin-top: 32px;
+  margin-top: 64px;
+}
+
+main .main_parents .parent {
+  border-radius: 8px;
+}
+
+main .main_parents .parent_green {
+  background-color: #ddf1d3;
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_green {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_parents .parent_green {
+    background-color: #ffffff;
+  }
+}
+
+main .main_parents .parent_mm {
+  background-color: #fff1cf;
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_mm {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_parents .parent_mm {
+    background-color: #ffffff;
+  }
+}
+
+main .main_parents .parent_blue {
+  background-color: #ebf3fb;
+}
+
+@media (min-width: 768px) {
+  main .main_parents .parent_blue {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_parents .parent_blue {
+    background-color: #ffffff;
+  }
 }
 
 main .main_parents .title {
@@ -334,6 +394,7 @@ main .main_parents .title {
 main .main_parents .parent_name {
   text-align: center;
   margin: 24px 0 16px 0;
+  padding-top: 8px;
 }
 
 @media (min-width: 768px) {

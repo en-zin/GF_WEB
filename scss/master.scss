@@ -6,7 +6,7 @@ main {
 
     .main {
 
-        margin: 16px 8px 0 8px;
+        margin: 16px 16px 0 16px;
         padding: 8px 8px 0 8px;
         background-color: #ffffff;
         border-radius: 9px;
@@ -33,9 +33,16 @@ main {
             &_introduction{
                 width: 90%;
                 margin: 8px auto 0 auto;
+
                 .explanation {
                     text-align: justify;
+
+                    &:nth-child(n + 1) {
+                        margin-top: 8px;
+                    }
+
                 }
+
             }
 
             &_coach{
@@ -93,6 +100,9 @@ main {
                     .coach_speech {
                         margin-top: 8px;
                         text-align: justify;
+                        &:nth-child(n+1) {
+                            margin-top: 8px;
+                        }
                     }
 
                 }
@@ -105,7 +115,41 @@ main {
         // 保護者の声
         &_parents {
 
-            margin-top: 32px;
+            margin-top: 64px;
+
+            .parent {
+                border-radius: 8px;
+            }
+
+            .parent_green {
+                background-color:#ddf1d3;
+                @include tab {
+                    background-color: #ffffff;
+                }
+                @include pc {
+                    background-color: #ffffff;
+                }
+            }
+
+            .parent_mm {
+                background-color: #fff1cf;
+                @include tab {
+                    background-color: #ffffff;
+                }
+                @include pc {
+                    background-color: #ffffff;
+                }
+            }
+
+            .parent_blue {
+                background-color: #ebf3fb;
+                @include tab {
+                    background-color: #ffffff;
+                }
+                @include pc {
+                    background-color: #ffffff;
+                }
+            }
 
             .title {
                 text-align: center;
@@ -116,6 +160,7 @@ main {
 
                 text-align: center;
                 margin: 24px 0 16px 0;
+                padding-top: 8px;
 
                 @include tab {
                     margin: 48px 0 32px 0;
@@ -148,9 +193,6 @@ main {
                 }
 
             }
-
-
-
 
             .parent_comment {
                 width: 90%;
