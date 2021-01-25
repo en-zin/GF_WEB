@@ -156,17 +156,23 @@
 
     .sp_tab_img {
 
-        height: calc(100vh - 48px);
-        width: 100vw;
-
-        @include tab {
-            height: calc(80vh - 48px);
-        }
-
         @include pc {
             display: none;
         }
 
+    }
+
+}
+
+.team_img {
+
+    img {
+        width: 100vw;
+        height: 100vh;
+
+        @include tab {
+            
+        }
     }
 
 }

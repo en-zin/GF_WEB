@@ -193,21 +193,15 @@ body {
   }
 }
 
-.slide .sp_tab_img {
-  height: calc(100vh - 48px);
-  width: 100vw;
-}
-
-@media (min-width: 768px) {
-  .slide .sp_tab_img {
-    height: calc(80vh - 48px);
-  }
-}
-
 @media (min-width: 1024px) {
   .slide .sp_tab_img {
     display: none;
   }
+}
+
+.team_img img {
+  width: 100vw;
+  height: 100vh;
 }
 
 main .main {
