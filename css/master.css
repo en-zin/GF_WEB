@@ -180,28 +180,27 @@ body {
   color: #fff;
 }
 
+.team_img {
+  width: 100vw;
+}
+
 @media (min-width: 768px) {
-  .slide {
+  .team_img {
     margin: 0 auto;
     width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .slide {
+  .team_img {
     width: 90%;
   }
 }
 
 @media (min-width: 1024px) {
-  .slide .sp_tab_img {
+  .team_img .sp_tab_img {
     display: none;
   }
-}
-
-.team_img img {
-  width: 100vw;
-  height: 100vh;
 }
 
 main .main {
@@ -322,6 +321,46 @@ main .main_team_prelusion_coach_introduction .coach_speech {
 
 main .main_team_prelusion_coach_introduction .coach_speech:nth-child(n+1) {
   margin-top: 8px;
+}
+
+main .main_team_record {
+  width: 90%;
+  margin: 64px auto auto auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  main .main_team_record {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_team_record {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+main .main_team_record .title {
+  text-align: center;
+}
+
+main .main_team_record td {
+  padding: 8px;
 }
 
 main .main_parents {
@@ -463,7 +502,19 @@ main .main_parents .parent_comment {
 }
 
 main .main_notice {
-  margin: 32px auto;
+  margin: 64px auto;
+}
+
+@media (min-width: 768px) {
+  main .main_notice {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_notice {
+    width: 90%;
+  }
 }
 
 main .main_notice .title {
@@ -510,4 +561,16 @@ main .main_cntact .contact_link {
   text-decoration: none;
   font-size: 16px;
   color: #000;
+}
+
+main .main_cntact .fa-twitter-square {
+  color: #1DA1F2;
+}
+
+main .main_cntact .fa-instagram {
+  color: #4c6f64;
+}
+
+main .main_cntact .fa-line {
+  color: green;
 }
