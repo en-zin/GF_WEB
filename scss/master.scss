@@ -64,8 +64,6 @@ main {
                     width: 90%;
                     margin: 32px auto;
 
-
-
                     @include tab {
                         width: 320px;
                         margin-top: 40px;
@@ -111,6 +109,36 @@ main {
 
         }
         // チーム紹介終わり
+
+        // 活動記録
+       &_team_record {
+            width: 90%;
+            margin: 64px auto auto auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include tab {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @include pc {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .title {
+                text-align: center;
+            }
+            td {
+                padding: 8px;
+            }
+
+        }
+
+        //活動記録終了
+
 
         // 保護者の声
         &_parents {
@@ -243,7 +271,15 @@ main {
         // お知らせ
         &_notice {
 
-            margin: 32px auto;
+            margin: 64px auto;
+
+            @include tab {
+                width: 90%;
+            }
+
+            @include pc {
+                width: 90%;
+            }
 
             .title {
                 text-align: center;
@@ -285,10 +321,23 @@ main {
                 }
             }
 
+
             .contact_link {
                 text-decoration: none;
                 font-size: 16px;
                 color: #000;
+            }
+
+            .fa-twitter-square {
+                color:#1DA1F2;
+            }
+
+            .fa-instagram {
+                color: rgb(76, 111, 100);
+            }
+
+            .fa-line {
+                color: green;
             }
 
 
