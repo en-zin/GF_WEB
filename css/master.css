@@ -180,25 +180,19 @@ body {
   color: #fff;
 }
 
-.team_img {
-  width: 100vw;
-}
-
 @media (min-width: 768px) {
-  .team_img {
+  .slide {
     margin: 0 auto;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .team_img {
     width: 90%;
   }
 }
 
+.slide .sp_tab_img {
+  height: 300px;
+}
+
 @media (min-width: 1024px) {
-  .team_img .sp_tab_img {
+  .slide .sp_tab_img {
     display: none;
   }
 }
@@ -231,8 +225,24 @@ main .main_team_prelusion_title {
 }
 
 main .main_team_prelusion_introduction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 90%;
   margin: 8px auto 0 auto;
+}
+
+main .main_team_prelusion_introduction .pc_img {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  main .main_team_prelusion_introduction .pc_img {
+    display: block;
+    width: 400px;
+    margin: auto  16px auto auto;
+  }
 }
 
 main .main_team_prelusion_introduction .explanation {
@@ -357,6 +367,7 @@ main .main_team_record {
 
 main .main_team_record .title {
   text-align: center;
+  margin: 16px;
 }
 
 main .main_team_record td {
@@ -456,49 +467,52 @@ main .main_parents .parent_name {
   }
 }
 
-main .main_parents .parent_comment {
-  width: 90%;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-@media (min-width: 768px) {
-  main .main_parents .parent_comment {
-    padding-left: 8px;
-  }
-}
-
 @media (min-width: 768px) {
   main .main_parents .parent_comment_green {
+    width: 90%;
+    margin: 0 auto;
     background-color: #f9f7e9;
     /*背景色*/
     border-left: solid 10px #87c10e;
     /*左ライン*/
     color: #000000;
     /*文字色*/
+    padding: 8px 16px 8px 16px;
   }
 }
 
 @media (min-width: 768px) {
   main .main_parents .parent_comment_mm {
+    width: 90%;
+    margin: 0 auto;
     background-color: #fffef3;
     /*背景色*/
     border-left: solid 10px #fbdd95;
     /*左ライン*/
     color: #000000;
     /*文字色*/
+    padding: 8px 16px 8px 16px;
   }
 }
 
 @media (min-width: 768px) {
   main .main_parents .parent_comment_blue {
+    width: 90%;
+    margin: 0 auto;
     background-color: #f6faee;
     /*背景色*/
     border-left: solid 10px #3fbcd0;
     /*左ライン*/
     color: #000000;
     /*文字色*/
+    padding: 8px 16px 8px 16px;
   }
+}
+
+main .main_parents .parent_comment {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 main .main_notice {
@@ -534,7 +548,7 @@ main .main_notice .calendar {
 }
 
 main .main_cntact {
-  margin: 32px 0 0 0 auto;
+  margin: 32px 0 32px auto;
   text-align: center;
   display: block;
 }
