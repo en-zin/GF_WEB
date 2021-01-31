@@ -31,8 +31,18 @@ main {
             }
 
             &_introduction{
+                display: flex;
                 width: 90%;
                 margin: 8px auto 0 auto;
+
+                .pc_img {
+                    display: none;
+                    @include pc {
+                        display: block;
+                        width:400px;
+                        margin: auto  16px auto auto;
+                    }
+                }
 
                 .explanation {
                     text-align: justify;
@@ -40,9 +50,7 @@ main {
                     &:nth-child(n + 1) {
                         margin-top: 8px;
                     }
-
                 }
-
             }
 
             &_coach{
@@ -130,6 +138,7 @@ main {
 
             .title {
                 text-align: center;
+                margin: 16px;
             }
             td {
                 padding: 8px;
@@ -222,23 +231,17 @@ main {
 
             }
 
-            .parent_comment {
-                width: 90%;
-                margin: 0 auto;
-                text-align: justify;
 
-                @include tab {
-                    padding-left: 8px;
-                }
-
-            }
 
             .parent_comment_green {
 
                 @include tab {
+                    width: 90%;
+                    margin: 0 auto;
                     background-color: #f9f7e9;;/*背景色*/
                     border-left: solid 10px #87c10e;/*左ライン*/
                     color:#000000;/*文字色*/
+                    padding: 8px 16px 8px 16px;
                 }
 
             }
@@ -246,9 +249,12 @@ main {
             .parent_comment_mm {
 
                 @include tab {
+                    width: 90%;
+                    margin: 0 auto;
                     background-color:#fffef3;/*背景色*/
                     border-left: solid 10px#fbdd95;/*左ライン*/
                     color:#000000;/*文字色*/
+                    padding: 8px 16px 8px 16px;
                 }
 
             }
@@ -257,11 +263,20 @@ main {
             .parent_comment_blue {
 
                 @include tab {
+                    width: 90%;
+                    margin: 0 auto;
                     background-color:#f6faee;/*背景色*/
                     border-left: solid 10px #3fbcd0;/*左ライン*/
                     color:#000000;/*文字色*/
+                    padding: 8px 16px 8px 16px;
                 }
 
+            }
+
+            .parent_comment {
+                width: 90%;
+                margin: 0 auto;
+                text-align: justify;
             }
 
         }
@@ -300,7 +315,7 @@ main {
 
         &_cntact {
 
-            margin: 32px 0 0 0 auto;
+            margin: 32px 0 32px auto;
             text-align: center;
             display: block;
 

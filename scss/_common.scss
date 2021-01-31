@@ -146,33 +146,16 @@
 
         @include tab {
             margin: 0 auto;
-            width: 100%;
-        }
-
-        @include pc {
             width: 90%;
         }
 
-
     .sp_tab_img {
 
+        height: 300px;
         @include pc {
             display: none;
         }
 
-    }
-
-}
-
-.team_img {
-
-    img {
-        width: 100vw;
-        height: 100vh;
-
-        @include tab {
-            
-        }
     }
 
 }
