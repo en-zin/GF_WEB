@@ -5,19 +5,16 @@
 <url>
   <loc>https://en-zin.github.io/GF_WEB/</loc>
   <priority>1.0</priority>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://en-zin.github.io/GF_WEB/record.html</loc>
   <priority>0.8</priority>
-  <lastmod>2021-02-04T22:29:23+09:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2021-02-05T19:48:14+09:00</lastmod>
 </url>
 <url>
   <loc>https://en-zin.github.io/GF_WEB/index.html</loc>
   <priority>0.7</priority>
-  <lastmod>2021-02-04T22:29:23+09:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2021-02-05T19:48:14+09:00</lastmod>
 </url>
 
 </urlset>
