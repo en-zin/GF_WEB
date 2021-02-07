@@ -1,0 +1,12 @@
+main .main {
+  margin-top: 64px;
+}
+
+main .main_team_record table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .main_team_record td {
+  width: 85%;
+}
