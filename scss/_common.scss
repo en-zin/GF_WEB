@@ -18,6 +18,16 @@
 
     }
 
+    &_title {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        &_h1 {
+            font-size: 16px;
+            color: silver;
+        }
+    }
+
     &_nav{
         display: none;
         width: 100vw;
