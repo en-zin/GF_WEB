@@ -516,6 +516,12 @@ main .main_ob .ob_container {
   border-radius: 8px;
 }
 
+@media (min-width: 768px) {
+  main .main_ob .ob_container {
+    background-color: #ffffff;
+  }
+}
+
 main .main_ob .ob_name {
   text-align: center;
   margin: 8px 0 16px 0;
