@@ -396,6 +396,11 @@ main .main_parents {
   margin-top: 64px;
 }
 
+main .main_parents .title {
+  text-align: center;
+  font-size: 2rem;
+}
+
 main .main_parents .parent {
   margin-top: 16px;
   padding: 8px 8px;
@@ -435,11 +440,6 @@ main .main_parents .parent_mm {
   }
 }
 
-main .main_parents .title {
-  text-align: center;
-  font-size: 2rem;
-}
-
 main .main_parents .parent_name {
   text-align: center;
   margin: 16px 0 16px 0;
@@ -464,6 +464,12 @@ main .main_parents .parent_name {
   main .main_parents .parent_name_mm {
     border-bottom: solid 2px #fbdd95;
   }
+}
+
+main .main_parents .parent_comment {
+  width: 90%;
+  margin: 8px auto;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -492,12 +498,6 @@ main .main_parents .parent_name {
     /*文字色*/
     padding: 8px 16px 8px 16px;
   }
-}
-
-main .main_parents .parent_comment {
-  width: 90%;
-  margin: 8px auto;
-  text-align: justify;
 }
 
 main .main_ob {
