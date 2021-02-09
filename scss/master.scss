@@ -157,11 +157,14 @@ main {
             margin-top: 64px;
 
             .parent {
+                margin-top: 16px;
+                padding: 8px 8px ;
                 border-radius: 8px;
             }
 
             .parent_green {
                 background-color:#ddf1d3;
+                border-radius: 8px;
                 @include tab {
                     background-color: #ffffff;
                 }
@@ -180,15 +183,6 @@ main {
                 }
             }
 
-            .parent_blue {
-                background-color: #ebf3fb;
-                @include tab {
-                    background-color: #ffffff;
-                }
-                @include pc {
-                    background-color: #ffffff;
-                }
-            }
 
             .title {
                 text-align: center;
@@ -198,7 +192,7 @@ main {
             .parent_name {
 
                 text-align: center;
-                margin: 24px 0 16px 0;
+                margin: 16px 0 16px 0;
                 padding-top: 8px;
 
                 @include tab {
@@ -224,16 +218,6 @@ main {
                 }
 
             }
-
-            .parent_name_blue {
-
-                @include tab {
-                    border-bottom: solid 2px #3fbcd0;
-                }
-
-            }
-
-
 
             .parent_comment_green {
 
@@ -261,20 +245,6 @@ main {
 
             }
 
-
-            .parent_comment_blue {
-
-                @include tab {
-                    width: 90%;
-                    margin: 0 auto;
-                    background-color:#f6faee;/*背景色*/
-                    border-left: solid 10px #3fbcd0;/*左ライン*/
-                    color:#000000;/*文字色*/
-                    padding: 8px 16px 8px 16px;
-                }
-
-            }
-
             .parent_comment {
                 width: 90%;
                 margin: 8px auto;
@@ -283,7 +253,57 @@ main {
 
         }
 
-        // 保護者の声終わり
+        &_ob {
+
+            margin-top: 64px;
+
+            .title {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .ob_container {
+                margin-top: 16px;
+                padding: 8px 8px;
+                background-color: #f9dbdb;
+                border-radius: 8px;
+            }
+
+            .ob_name {
+
+                text-align: center;
+                margin: 8px 0 16px 0;
+                padding-top: 8px;
+
+                @include tab {
+                    margin: 48px 0 32px 0;
+                    text-align: left;
+                    display: inline-block;
+                    border-bottom: solid 2px #f54242;
+                }
+            }
+
+            .ob_comment_container {
+
+                @include tab {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 8px 16px 8px 16px;
+                    background-color: #fff3f1;
+                    border-left: solid 10px #f54242;
+                }
+
+            }
+
+            .ob_comment {
+                width: 90%;
+                margin: 8px auto;
+                text-align: justify;
+            }
+
+        }
+
+        //obの思い出声終わり
 
         // お知らせ
         &_notice {

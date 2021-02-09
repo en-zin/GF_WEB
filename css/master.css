@@ -397,11 +397,14 @@ main .main_parents {
 }
 
 main .main_parents .parent {
+  margin-top: 16px;
+  padding: 8px 8px;
   border-radius: 8px;
 }
 
 main .main_parents .parent_green {
   background-color: #ddf1d3;
+  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
@@ -432,22 +435,6 @@ main .main_parents .parent_mm {
   }
 }
 
-main .main_parents .parent_blue {
-  background-color: #ebf3fb;
-}
-
-@media (min-width: 768px) {
-  main .main_parents .parent_blue {
-    background-color: #ffffff;
-  }
-}
-
-@media (min-width: 1024px) {
-  main .main_parents .parent_blue {
-    background-color: #ffffff;
-  }
-}
-
 main .main_parents .title {
   text-align: center;
   font-size: 2rem;
@@ -455,7 +442,7 @@ main .main_parents .title {
 
 main .main_parents .parent_name {
   text-align: center;
-  margin: 24px 0 16px 0;
+  margin: 16px 0 16px 0;
   padding-top: 8px;
 }
 
@@ -476,12 +463,6 @@ main .main_parents .parent_name {
 @media (min-width: 768px) {
   main .main_parents .parent_name_mm {
     border-bottom: solid 2px #fbdd95;
-  }
-}
-
-@media (min-width: 768px) {
-  main .main_parents .parent_name_blue {
-    border-bottom: solid 2px #3fbcd0;
   }
 }
 
@@ -513,21 +494,54 @@ main .main_parents .parent_name {
   }
 }
 
+main .main_parents .parent_comment {
+  width: 90%;
+  margin: 8px auto;
+  text-align: justify;
+}
+
+main .main_ob {
+  margin-top: 64px;
+}
+
+main .main_ob .title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .main_ob .ob_container {
+  margin-top: 16px;
+  padding: 8px 8px;
+  background-color: #f9dbdb;
+  border-radius: 8px;
+}
+
+main .main_ob .ob_name {
+  text-align: center;
+  margin: 8px 0 16px 0;
+  padding-top: 8px;
+}
+
 @media (min-width: 768px) {
-  main .main_parents .parent_comment_blue {
-    width: 90%;
-    margin: 0 auto;
-    background-color: #f6faee;
-    /*背景色*/
-    border-left: solid 10px #3fbcd0;
-    /*左ライン*/
-    color: #000000;
-    /*文字色*/
-    padding: 8px 16px 8px 16px;
+  main .main_ob .ob_name {
+    margin: 48px 0 32px 0;
+    text-align: left;
+    display: inline-block;
+    border-bottom: solid 2px #f54242;
   }
 }
 
-main .main_parents .parent_comment {
+@media (min-width: 768px) {
+  main .main_ob .ob_comment_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8px 16px 8px 16px;
+    background-color: #fff3f1;
+    border-left: solid 10px #f54242;
+  }
+}
+
+main .main_ob .ob_comment {
   width: 90%;
   margin: 8px auto;
   text-align: justify;
