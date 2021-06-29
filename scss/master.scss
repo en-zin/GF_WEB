@@ -32,12 +32,22 @@ main {
             }
 
             &_introduction{
-                display: flex;
                 width: 90%;
                 margin: 8px auto 0 auto;
 
+                @include pc {
+                    display: flex;
+                }
+
+
                 .pc_img {
                     display: none;
+
+                    @include tab {
+                        display: block;
+                        width:400px;
+                        margin: 0 auto;
+                    }
                     @include pc {
                         display: block;
                         width:400px;
@@ -126,6 +136,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
 
             @include tab {
                 width: 90%;
@@ -138,8 +149,8 @@ main {
             }
 
             .title {
-                text-align: center;
-                margin: 16px;
+                margin: 24px;
+                font-size: 24px;
             }
 
             td {
@@ -316,7 +327,7 @@ main {
         //obの思い出声終わり
 
         // お知らせ
-        &_notice {
+        &_plans {
 
             margin: 64px auto;
 
@@ -344,6 +355,29 @@ main {
 
         }
         // お知らせ終わり
+
+        &_notice {
+
+            margin: 0 auto;
+
+            @include tab {
+                width: 80%;
+            }
+    
+            @include pc {
+                width: 80%;
+            }
+
+            .title {
+                padding-top: 8px;
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .osirase_jpeg {
+                width: 100%;
+            }
+        }
 
         &_cntact {
 

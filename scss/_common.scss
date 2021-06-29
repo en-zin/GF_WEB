@@ -162,6 +162,11 @@
     .sp_tab_img {
 
         height: 300px;
+
+        @include tab {
+            display: none;
+        }
+        
         @include pc {
             display: none;
         }

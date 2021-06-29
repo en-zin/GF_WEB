@@ -208,6 +208,12 @@ body {
   height: 300px;
 }
 
+@media (min-width: 768px) {
+  .slide .sp_tab_img {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .slide .sp_tab_img {
     display: none;
@@ -243,16 +249,29 @@ main .main_team_prelusion_title {
 }
 
 main .main_team_prelusion_introduction {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 90%;
   margin: 8px auto 0 auto;
 }
 
+@media (min-width: 1024px) {
+  main .main_team_prelusion_introduction {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 main .main_team_prelusion_introduction .pc_img {
   display: none;
+}
+
+@media (min-width: 768px) {
+  main .main_team_prelusion_introduction .pc_img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -367,6 +386,7 @@ main .main_team_record {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -384,8 +404,8 @@ main .main_team_record {
 }
 
 main .main_team_record .title {
-  text-align: center;
-  margin: 16px;
+  margin: 24px;
+  font-size: 24px;
 }
 
 main .main_team_record td {
@@ -553,36 +573,62 @@ main .main_ob .ob_comment {
   text-align: justify;
 }
 
-main .main_notice {
+main .main_plans {
   margin: 64px auto;
 }
 
 @media (min-width: 768px) {
-  main .main_notice {
+  main .main_plans {
     width: 90%;
   }
 }
 
 @media (min-width: 1024px) {
-  main .main_notice {
+  main .main_plans {
     width: 90%;
   }
 }
 
-main .main_notice .title {
+main .main_plans .title {
   text-align: center;
   font-size: 2rem;
 }
 
-main .main_notice .calendar {
+main .main_plans .calendar {
   width: 100%;
   height: 560px;
 }
 
 @media (min-width: 768px) {
-  main .main_notice .calendar {
+  main .main_plans .calendar {
     height: 700px;
   }
+}
+
+main .main_notice {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  main .main_notice {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .main_notice {
+    width: 80%;
+  }
+}
+
+main .main_notice .title {
+  padding-top: 8px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main .main_notice .osirase_jpeg {
+  width: 100%;
 }
 
 main .main_cntact {
